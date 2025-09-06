@@ -52,6 +52,12 @@ This is a Next.js 15 application using App Router with HeroUI component library 
 - Dark mode is the default theme
 - Component variants handled via tailwind-variants library
 
+### Navigation & Routing
+- **Use HeroUI's built-in navigation** - HeroUIProvider is configured with `navigate={router.push}` in `providers.tsx`
+- **For navigation, use `href` prop** on HeroUI components (Button, Link, etc.) instead of manual `onPress` handlers
+- **Avoid manual `useRouter`** in components when HeroUI navigation is available
+- Example: `<Button href="/home">Navigate</Button>` instead of `<Button onPress={() => router.push('/home')}>`
+
 ### ESLint Rules
 - Auto-fixes on `npm run lint`
 - Enforces import order and sorting

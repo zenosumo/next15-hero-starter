@@ -17,12 +17,8 @@ export default function Home() {
           </ol>
 
           <div className="flex gap-4 items-center flex-col sm:flex-row">
-            <Button
-              onPress={() => {
-                console.log('Button pressed');
-              }}
-            >
-              Press me
+            <Button href="/home">
+              Let's Start...
             </Button>
           </div>
         </main>
