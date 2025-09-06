@@ -7,11 +7,11 @@ type ContainerProps = {
 
 export default function Container({children, className}: ContainerProps) {
   return (
-    <>
+    <main>
       {/* 
         Origianl class name: flex flex-col flex-grow h-full pb-6 py-0 pt-0 items-center justify-center
       */}
       <div className={cn('', className)}>{children}</div>
-    </>
+    </main>
   );
 }
