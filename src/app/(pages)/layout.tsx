@@ -3,7 +3,6 @@ import {Link} from '@heroui/link';
 
 import {Navbar} from '@/components/layout/navbar';
 import {fontSans} from '@/config/fonts';
-
 import {cn} from '@/lib/utils';
 
 export default function MainLayout({children}: {children: React.ReactNode}) {

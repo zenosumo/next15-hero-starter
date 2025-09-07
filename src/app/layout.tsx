@@ -1,8 +1,11 @@
-import {siteConfig} from '@/config/site';
 import '@/styles/globals.css';
 import type {Metadata, Viewport} from 'next';
+
 import {Geist, Geist_Mono} from 'next/font/google';
+
 import {Providers} from './providers';
+
+import {siteConfig} from '@/config/site';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -40,7 +43,7 @@ export default function RootLayout({
   return (
     <html suppressHydrationWarning lang="en">
       <head />
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background text-foreground`}>
         <Providers themeProps={{attribute: 'class', defaultTheme: 'dark'}}>{children}</Providers>
       </body>
     </html>

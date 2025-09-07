@@ -52,6 +52,6 @@ export const siteConfig = {
     },
   ],
   links: {
-    sponsor: 'https://patreon.com/first-brick',
+    sponsor: 'https://patreon.com/anaketa',
   },
 };

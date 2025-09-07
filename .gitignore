@@ -49,3 +49,6 @@ bun.lockb
 
 # cypress
 cypress/screenshots
+
+# custom
+sandbox
